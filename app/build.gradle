@@ -1,0 +1,55 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.petfinder'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.petfinder"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    // AJOUTER CES LIGNES POUR FIREBASE
+
+    // 1. Firebase BOM (Bill of Materials) - gère les versions des SDK Firebase
+    implementation platform('com.google.firebase:firebase-bom:33.1.0')
+
+    // 2. Authentification (pour Email/Mdp ET Google)
+    implementation 'com.google.firebase:firebase-auth'
+
+    // 3. Firestore (pour sauvegarder les infos utilisateur : nom, tél, etc.)
+    implementation 'com.google.firebase:firebase-firestore'
+
+    // 4. Dépendance pour Google Sign-In (nécessaire pour le bouton Google)
+    implementation 'com.google.android.gms:play-services-auth:21.2.0'
+}
