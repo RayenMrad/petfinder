@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">petfinder</string>
+    <string name="app_name">PetFinder</string>
+    <string name="login_title">Login to Your Account</string>
+    <string name="register_title">Create Your Account</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="get_started">Get Started</string>
+    <string name="or_sign_in_with">- Or sign in with -</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="signup_text">
+        Don\'t have an account ?
+        <font color="#00BCD4">Sign Up</font>
+    </string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone</string>
+    <string name="gender">Gender</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_in_withgoogle">Sign in with Google</string>
+    <string name="sign_in_withfacebook">Sign in with Facebook</string>
+    <string name="signin_text">
+        Already have an account ?
+        <font color="#00BCD4">Sign In</font>
+    </string>
+    <string name="back_button_desc">Navigate back to the previous screen</string>
+    <string name="forgot_password_desc">Select which contact method we should use to reset your password.</string>
 </resources>
