@@ -25,4 +25,5 @@
     </string>
     <string name="back_button_desc">Navigate back to the previous screen</string>
     <string name="forgot_password_desc">Select which contact method we should use to reset your password.</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
